@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="public/style.css" rel="stylesheet">
+    <script defer src="public/script.js"></script>
+<!--    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>-->
+</head>
+<body>
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+</h1>
+<p class="text-blue-600">The quick brown fox...</p>
+<div x-data="{ count: 0 }">
+    <button x-on:click="count++">Increment</button>
+
+    <span x-text="count"></span>
+</div>
+</body>
+</html>
